@@ -2,27 +2,17 @@ package com.ecn.recoapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.util.Log;
-import android.content.Intent;
-import android.widget.EditText;
-import android.widget.TextView;
 
-
-public class MainActivity extends AppCompatActivity {
+public class SwipeActivity extends AppCompatActivity {
 
     private static final String LOG_TAG =
             MainActivity.class.getSimpleName();
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(LOG_TAG, "-------");
-        Log.d(LOG_TAG, "onCreate");
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_swipe);
     }
     @Override
     public void onStart(){
@@ -54,22 +44,5 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         Log.d(LOG_TAG, "onDestroy");
     }
-    @Override
-    public void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        Log.d(LOG_TAG, "onSaveInstanceState");
 
-    }
-
-    public void launchSwipeActivity(View view) {
-        Log.d(LOG_TAG, "Button clicked, redirected to SwipeActivity");
-        Intent intent = new Intent(this, SwipeActivity.class);
-    }
-
-    @Override
-    public void onActivityResult(int requestCode,
-                                 int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        Log.d(LOG_TAG, "onActivityResult");
-    }
 }
