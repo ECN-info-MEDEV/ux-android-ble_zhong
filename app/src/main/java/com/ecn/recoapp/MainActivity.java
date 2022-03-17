@@ -5,16 +5,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.util.Log;
 import android.content.Intent;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.lorentzos.flingswipe.SwipeFlingAdapterView;
+
+import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String LOG_TAG =
             MainActivity.class.getSimpleName();
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

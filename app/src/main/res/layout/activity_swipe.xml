@@ -6,4 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".SwipeActivity">
 
+    <com.lorentzos.flingswipe.SwipeFlingAdapterView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/card">
+    </com.lorentzos.flingswipe.SwipeFlingAdapterView>
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/sym_def_app_icon"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mode film"
+        tools:layout_editor_absoluteX="282dp"
+        tools:layout_editor_absoluteY="22dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Revenir à l'accueil"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="651dp" />
 </android.support.constraint.ConstraintLayout>
