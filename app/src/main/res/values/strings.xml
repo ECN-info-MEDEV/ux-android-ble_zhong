@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TwoActivities</string>
+    <string name="app_name">RecoApp</string>
     <string name="activity2_name">Second Activity</string>
     <string name="button_main">Send</string>
     <string name="text_header">Message Received</string>
@@ -7,4 +7,12 @@
     <string name="editText_second">Enter your reply here : )</string>
     <string name="text_header_reply">Reply Received</string>
     <string name="editText_main">Enter your message here.</string>
+    <string name="mode1">Film mode.</string>
+    <string name="mode2">Book mode.</string>
+    <string name="mode3">Series mode.</string>
+    <string name="mainPage_pseudo">Pseudo</string>
+    <string name="mainPage_espace_personelle">Espace Personelle</string>
+    <string name="mainPage_trouver_votre_recommandation">Trouver votre recommandation</string>
+    <string name="mainPage_log_out">Log out</string>
+    <string name="mainPage_select_mode">Select Mode</string>
 </resources>
