@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ECN_DEVMO_Android.iml" filepath="$PROJECT_DIR$/.idea/ECN_DEVMO_Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RecoApp.iml" filepath="$PROJECT_DIR$/.idea/modules/RecoApp.iml" />
     </modules>
   </component>
 </project>
