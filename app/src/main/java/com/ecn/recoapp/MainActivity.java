@@ -86,6 +86,12 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         startActivity(intent);
     }
 
+    public void launchProfileActivity(View view) {
+        Log.d(LOG_TAG, "Button clicked, redirected to ProfileActivity");
+        Intent intent = new Intent(this, ProfileActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public void onActivityResult(int requestCode,
                                  int resultCode, Intent data) {
