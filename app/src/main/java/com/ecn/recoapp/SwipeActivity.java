@@ -43,8 +43,15 @@ public class SwipeActivity extends AppCompatActivity {
             public void removeFirstObjectInAdapter(){
                 s.remove(0);
                 pic.remove(0);
-                arrayAdapter.notifyDataSetChanged();
-                findViewById(R.id.backcard).setBackgroundResource(pic.get(0));
+
+                if (pic.size()!=0) {
+                    findViewById(R.id.backcard).setBackgroundResource(pic.get(0));
+                    arrayAdapter.notifyDataSetChanged();
+                }
+                else {
+                    findViewById(R.id.backcard).setVisibility(View.INVISIBLE);
+                    findViewById(R.id.infos).setVisibility(View.INVISIBLE);
+                }
             }
 
             @Override
@@ -99,6 +106,11 @@ public class SwipeActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "onDestroy");
     }
 
+    public void launchMainActivity(View view) {
+        Log.d(LOG_TAG, "Button clicked, redirected to MainActivity");
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 
 
     public void launchInfos(View view) {
