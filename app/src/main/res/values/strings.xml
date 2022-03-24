@@ -16,4 +16,9 @@
     <string name="mainPage_log_out">Log out</string>
     <string name="mainPage_select_mode">Select Mode</string>
     <string name="activity3_name">Personal Profile</string>
+    <string name="profile_modify_button">MODIFY</string>
+    <string name="profile_button_accueil">Accueil</string>
+    <string name="profile_scroll_title_1">Styles</string>
+    <string name="profile_scroll_title_2">Historique des visionnements</string>
+    <string name="tag_delete">Delete</string>
 </resources>

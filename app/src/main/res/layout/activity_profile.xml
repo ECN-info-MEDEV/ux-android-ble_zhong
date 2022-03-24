@@ -6,4 +6,358 @@
     android:layout_height="match_parent"
     tools:context=".ProfileActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="99dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar_default" />
+
+    <TextView
+        android:id="@+id/pseudo2"
+        android:layout_width="57dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="116dp"
+        android:text="@string/mainPage_pseudo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/profile_modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/royal_yellow"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/profile_modify_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pseudo2" />
+
+    <ScrollView
+        android:layout_width="369dp"
+        android:layout_height="308dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/shallow_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_scroll_title_2" />
+
+            <Button
+                android:id="@+id/film_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Film 1" />
+
+            <Button
+                android:id="@+id/film_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Film 2" />
+
+            <Button
+                android:id="@+id/film_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Film 3" />
+
+            <Button
+                android:id="@+id/film_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Film 4" />
+
+            <Button
+                android:id="@+id/film_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Film 5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/film_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Film 6" />
+
+            <Button
+                android:id="@+id/film_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Film 7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/film_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Film 8" />
+
+            <Button
+                android:id="@+id/film_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Film 9" />
+
+            <Button
+                android:id="@+id/film_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Film 10" />
+
+            <Button
+                android:id="@+id/film_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Film 11" />
+
+            <Button
+                android:id="@+id/film_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Film 12" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="369dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="136dp"
+        android:background="@color/shallow_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profile_scroll_title_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_scroll_title_1" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tag_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tag 1" />
+
+                    <Button
+                        android:id="@+id/button27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tag_delete" />
+
+                    <View
+                        android:id="@+id/divider2"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/shallow_purple"
+                        android:background="?android:attr/listDivider" />
+
+                    <TextView
+                        android:id="@+id/tag_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tag 2" />
+
+                    <Button
+                        android:id="@+id/button28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tag_delete" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tag_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tag 3" />
+
+                    <Button
+                        android:id="@+id/button19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tag_delete" />
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/shallow_purple"
+                        android:background="?android:attr/listDivider" />
+
+                    <TextView
+                        android:id="@+id/tag_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tag 4" />
+
+                    <Button
+                        android:id="@+id/button23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tag_delete" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tag_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tag 5" />
+
+                    <Button
+                        android:id="@+id/button20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tag_delete" />
+
+                    <View
+                        android:id="@+id/divider3"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/shallow_purple"
+                        android:background="?android:attr/listDivider" />
+
+                    <TextView
+                        android:id="@+id/tag_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tag 6" />
+
+                    <Button
+                        android:id="@+id/button24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tag_delete" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tag_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tag 7" />
+
+                    <Button
+                        android:id="@+id/button21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tag_delete" />
+
+                    <View
+                        android:id="@+id/divider4"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/shallow_purple"
+                        android:background="?android:attr/listDivider" />
+
+                    <TextView
+                        android:id="@+id/tag_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tag 8" />
+
+                    <Button
+                        android:id="@+id/button25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tag_delete" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tag_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tag 9" />
+
+                    <Button
+                        android:id="@+id/button22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tag_delete" />
+
+                    <View
+                        android:id="@+id/divider5"
+                        android:layout_width="78dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/shallow_purple"
+                        android:background="?android:attr/listDivider" />
+
+                    <TextView
+                        android:id="@+id/tag_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tag 10" />
+
+                    <Button
+                        android:id="@+id/button26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tag_delete" />
+
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/profile_accueil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/royal_yellow"
+        android:layout_marginBottom="16dp"
+        android:text="@string/profile_button_accueil"
+        android:onClick="launchMainActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

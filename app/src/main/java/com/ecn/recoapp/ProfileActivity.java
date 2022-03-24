@@ -1,8 +1,10 @@
 package com.ecn.recoapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 public class ProfileActivity extends AppCompatActivity {
     private static final String LOG_TAG =
@@ -41,5 +43,11 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.d(LOG_TAG, "onDestroy");
+    }
+
+    public void launchMainActivity(View view) {
+        Log.d(LOG_TAG, "Button clicked, redirected to MainActivity");
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }
