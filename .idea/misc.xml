@@ -3,16 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-<<<<<<< HEAD
+        <entry key="..\:/EI3/devmo projet/ux-android-ble_zhong/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1015" />
+        <entry key="..\:/EI3/devmo projet/ux-android-ble_zhong/app/src/main/res/drawable/ic_launcher_background.xml" value="0.174" />
         <entry key="..\:/EI3/devmo projet/ux-android-ble_zhong/app/src/main/res/layout/activity_main.xml" value="0.22282608695652173" />
-        <entry key="..\:/EI3/devmo projet/ux-android-ble_zhong/app/src/main/res/layout/activity_swipe.xml" value="0.22282608695652173" />
-        <entry key="..\:/EI3/devmo projet/ux-android-ble_zhong/app/src/main/res/layout/details.xml" value="0.22282608695652173" />
-=======
-        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2085" />
-        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2085" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.28125" />
-        <entry key="app/src/main/res/menu/menu.xml" value="0.2953125" />
->>>>>>> 975b3f3f46262b40bf618b6225b497501f0b31b9
+        <entry key="..\:/EI3/devmo projet/ux-android-ble_zhong/app/src/main/res/layout/activity_swipe.xml" value="0.1" />
+        <entry key="..\:/EI3/devmo projet/ux-android-ble_zhong/app/src/main/res/layout/details.xml" value="0.1" />
       </map>
     </option>
   </component>
