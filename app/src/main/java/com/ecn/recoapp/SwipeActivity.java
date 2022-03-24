@@ -29,14 +29,15 @@ public class SwipeActivity extends AppCompatActivity {
         s.add("Harry Potter");
         s.add("Le seigneur des anneaux");
         SwipeFlingAdapterView swipeFlingAdapterView=(SwipeFlingAdapterView) findViewById(R.id.card);
-
-        arrayAdapter= new ArrayAdapter<String>(this, R.layout.details,R.id.textView,s);
+        findViewById(R.id.backcard).setBackgroundResource(R.drawable.harry);
+        arrayAdapter= new ArrayAdapter<String>(this, R.layout.details,R.id.nomFilm,s);
         swipeFlingAdapterView.setAdapter(arrayAdapter);
         swipeFlingAdapterView.setFlingListener(new SwipeFlingAdapterView.onFlingListener(){
             @Override
             public void removeFirstObjectInAdapter(){
                 s.remove(0);
                 arrayAdapter.notifyDataSetChanged();
+                findViewById(R.id.backcard).setBackgroundResource(R.drawable.seigneur);
             }
 
             @Override
