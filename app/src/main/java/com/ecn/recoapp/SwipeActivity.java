@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.lorentzos.flingswipe.SwipeFlingAdapterView;
 
@@ -20,7 +21,6 @@ public class SwipeActivity extends AppCompatActivity {
 
     ArrayList<String> s;
     ArrayAdapter arrayAdapter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,16 +28,23 @@ public class SwipeActivity extends AppCompatActivity {
         s=new ArrayList<String>();
         s.add("Harry Potter");
         s.add("Le seigneur des anneaux");
+        s.add("Fin des recommandations");
+        ArrayList<Integer> pic = new ArrayList<>();
+        pic.add(R.drawable.harry);
+        pic.add(R.drawable.seigneur);
+        pic.add(R.drawable.empty);
         SwipeFlingAdapterView swipeFlingAdapterView=(SwipeFlingAdapterView) findViewById(R.id.card);
-        findViewById(R.id.backcard).setBackgroundResource(R.drawable.harry);
+        findViewById(R.id.backcard).setBackgroundResource(pic.get(0));
         arrayAdapter= new ArrayAdapter<String>(this, R.layout.details,R.id.nomFilm,s);
         swipeFlingAdapterView.setAdapter(arrayAdapter);
         swipeFlingAdapterView.setFlingListener(new SwipeFlingAdapterView.onFlingListener(){
+
             @Override
             public void removeFirstObjectInAdapter(){
                 s.remove(0);
+                pic.remove(0);
                 arrayAdapter.notifyDataSetChanged();
-                findViewById(R.id.backcard).setBackgroundResource(R.drawable.seigneur);
+                findViewById(R.id.backcard).setBackgroundResource(pic.get(0));
             }
 
             @Override
@@ -92,4 +99,9 @@ public class SwipeActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "onDestroy");
     }
 
+
+
+    public void launchInfos(View view) {
+        Toast.makeText(this, "Informations non disponnibles", Toast.LENGTH_SHORT).show();
+    }
 }
